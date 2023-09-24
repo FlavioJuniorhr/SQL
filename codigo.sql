@@ -612,3 +612,23 @@ VALUES
 
 --q1
 select*from tabela_paises
+--q2
+select cidade from tabela_paises where pais = 'Brazil'
+--q3
+select cidade from tabela_paises where regiao = 'Ceará'
+--q4
+select count(regiao) from tabela_paises where pais = 'China' group by regiao
+--q5
+select count(distinct regiao) from tabela_paises where pais = 'Canada'
+--q6
+select distinct pais from tabela_paises
+--q7
+select distinct cidade from tabela_paises where pais = 'Brazil'
+--q8
+select pais,count(regiao) from tabela_paises group by pais
+--q9
+select count(nome) from tabela_paises where nome like 'João%'
+--q10
+select count(nome) from tabela_paises where nome = 'John'
+--q11
+select distinct pais from tabela_paises order by pais ASC
